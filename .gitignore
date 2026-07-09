@@ -1,5 +1,17 @@
 # .gitignore
 
+# Not tracked in this repo (backend-only)
+frontend/
+infra/
+learn/
+data/
+dev-log/
+compose.yml
+dev.compose.yml
+justfile
+.dockerignore
+.env.example
+
 # dev docs
 .sentineldrift/
 
