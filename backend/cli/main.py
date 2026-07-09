@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 main.py
 
 Typer CLI application with serve, train, replay, config,
@@ -34,7 +33,7 @@ import typer
 
 app = typer.Typer(
     name="vigil",
-    help="AngelusVigil — AI-powered threat detection engine",
+    help="SentinelDrift — AI-powered threat detection engine",
     no_args_is_help=True,
 )
 
@@ -43,7 +42,7 @@ DEFAULT_EPOCHS = 100
 DEFAULT_BATCH_SIZE = 256
 DEFAULT_SYNTHETIC_NORMAL = 1000
 DEFAULT_SYNTHETIC_ATTACK = 500
-DEFAULT_EXPERIMENT_NAME = "angelusvigil-training"
+DEFAULT_EXPERIMENT_NAME = "sentineldrift-training"
 DEFAULT_SERVER_URL = "http://localhost:8000"
 
 
@@ -99,7 +98,7 @@ def serve(
                                 help="Enable auto-reload for development"),
 ) -> None:
     """
-    Start the AngelusVigil API server
+    Start the SentinelDrift API server
     """
     import uvicorn
 

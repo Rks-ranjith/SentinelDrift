@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_training_e2e.py
 
 End-to-end training integration test from synthetic data

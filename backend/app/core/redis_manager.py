@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 redis_manager.py
 
 Async Redis connection lifecycle manager with module-level

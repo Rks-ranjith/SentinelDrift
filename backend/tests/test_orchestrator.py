@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_orchestrator.py
 
 Tests the TrainingOrchestrator pipeline from data splitting

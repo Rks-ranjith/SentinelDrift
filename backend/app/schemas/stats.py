@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 stats.py
 
 Pydantic response models for the /stats endpoint

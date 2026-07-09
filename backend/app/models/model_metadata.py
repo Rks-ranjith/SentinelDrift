@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 model_metadata.py
 
 SQLModel table tracking ML model versions, training

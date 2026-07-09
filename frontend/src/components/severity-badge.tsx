@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // severity-badge.tsx
 //
 // Threat severity level badge component

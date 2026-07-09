@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 env.py
 
 Alembic migration environment with async PostgreSQL engine

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_geoip.py
 
 Tests the GeoIPService MaxMind lookup including private IP

@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // threats.types.ts
 //
 // Zod schemas and types for threat event data

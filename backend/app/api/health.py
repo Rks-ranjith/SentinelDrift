@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 health.py
 
 Health and readiness probe endpoints for container

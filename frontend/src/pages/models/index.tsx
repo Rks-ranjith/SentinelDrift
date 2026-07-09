@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // index.tsx
 //
 // Models page with status banner, retrain button, and model

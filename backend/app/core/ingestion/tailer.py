@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 tailer.py
 
 Watchdog-based nginx log file tailer with rotation

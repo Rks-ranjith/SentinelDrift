@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // index.tsx
 //
 // Threats table page with severity and IP filters,

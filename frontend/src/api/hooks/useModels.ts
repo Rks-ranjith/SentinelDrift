@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // useModels.ts
 //
 // TanStack Query hooks for model status and retraining

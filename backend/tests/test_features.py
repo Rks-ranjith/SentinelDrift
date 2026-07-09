@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_features.py
 
 Tests the 23 per-request feature extractor, Redis sliding-

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_splitting.py
 
 Tests stratified train/val/test splitting with SMOTE

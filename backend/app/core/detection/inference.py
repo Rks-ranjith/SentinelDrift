@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 inference.py
 
 ONNX-based inference engine for the 3-model ML ensemble

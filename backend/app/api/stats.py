@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 stats.py
 
 Threat statistics endpoint returning aggregated metrics

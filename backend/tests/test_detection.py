@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_detection.py
 
 Tests the RuleEngine threat scoring, severity
@@ -26,7 +25,7 @@ Connects to:
 
 from datetime import datetime, UTC
 
-from app.core.detection.rules import RuleEngine
+from app.core.detection.rules import RuleEngine, RuleExclusion
 from app.core.ingestion.parsers import ParsedLogEntry
 
 
@@ -279,3 +278,59 @@ def test_open_redirect() -> None:
     result = ENGINE.score_request(_empty_windowed(), entry)
     assert "OPEN_REDIRECT" in result.matched_rules
     assert result.threat_score >= 0.5
+
+
+def test_rule_exclusion_by_ip() -> None:
+    """
+    Verify rule-specific bypass by IP.
+    """
+    # Without exclusion, command injection is blocked (score >= 0.7)
+    entry = _make_entry(path="/ping", query_string="host=127.0.0.1;ls")
+    result_normal = ENGINE.score_request(_empty_windowed(), entry)
+    assert "COMMAND_INJECTION" in result_normal.matched_rules
+    assert result_normal.threat_score >= 0.7
+
+    # With exclusion for IP, command injection is bypassed
+    exclusions = [RuleExclusion(rule_name="COMMAND_INJECTION", ips=[entry.ip])]
+    engine_with_exc = RuleEngine(exclusions=exclusions)
+    result_exc = engine_with_exc.score_request(_empty_windowed(), entry)
+    assert "COMMAND_INJECTION" not in result_exc.matched_rules
+    assert result_exc.threat_score == 0.0
+
+
+def test_rule_exclusion_by_path() -> None:
+    """
+    Verify rule-specific bypass by path pattern.
+    """
+    # Without exclusion, SQL Injection is blocked (score >= 0.7)
+    entry = _make_entry(path="/api/v1/admin/raw-sql", query_string="query=1' UNION SELECT username FROM users--")
+    result_normal = ENGINE.score_request(_empty_windowed(), entry)
+    assert "SQL_INJECTION" in result_normal.matched_rules
+
+    # With exclusion for the path, SQL Injection is bypassed
+    exclusions = [RuleExclusion(rule_name="SQL_INJECTION", paths=["/admin/raw-sql"])]
+    engine_with_exc = RuleEngine(exclusions=exclusions)
+    result_exc = engine_with_exc.score_request(_empty_windowed(), entry)
+    assert "SQL_INJECTION" not in result_exc.matched_rules
+    assert result_exc.threat_score == 0.0
+
+
+def test_global_exclusion_by_ip() -> None:
+    """
+    Verify global bypass for all rules (*) by IP.
+    """
+    entry = _make_entry(
+        path="/ping;cat /etc/passwd",
+        query_string="id=1' UNION SELECT 1--",
+        user_agent="sqlmap/1.8",
+    )
+    # Normal execution matches multiple rules
+    result_normal = ENGINE.score_request(_empty_windowed(), entry)
+    assert len(result_normal.matched_rules) > 1
+
+    # Global exclusion bypasses everything for this IP
+    exclusions = [RuleExclusion(rule_name="*", ips=[entry.ip])]
+    engine_with_exc = RuleEngine(exclusions=exclusions)
+    result_exc = engine_with_exc.score_request(_empty_windowed(), entry)
+    assert result_exc.matched_rules == []
+    assert result_exc.threat_score == 0.0

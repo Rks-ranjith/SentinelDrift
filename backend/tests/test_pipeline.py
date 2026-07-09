@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_pipeline.py
 
 Tests the async ingestion pipeline across all 4 stages:

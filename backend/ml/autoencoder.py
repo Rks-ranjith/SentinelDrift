@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 autoencoder.py
 
 PyTorch symmetric autoencoder for HTTP request anomaly

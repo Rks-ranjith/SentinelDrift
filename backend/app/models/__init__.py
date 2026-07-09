@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 __init__.py
 
 Models package exporting SQLModel table classes for

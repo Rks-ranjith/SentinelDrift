@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 config.py
 
 Pydantic-settings application configuration loaded from
@@ -42,7 +41,7 @@ class Settings(BaseSettings):
         case_sensitive=False,
     )
 
-    app_name: str = "AngelusVigil"
+    app_name: str = "SentinelDrift"
     env: str = "development"
     debug: bool = False
     host: str = "0.0.0.0"
@@ -50,7 +49,7 @@ class Settings(BaseSettings):
     api_key: str = ""
     log_level: str = "INFO"
 
-    database_url: str = "postgresql+asyncpg://vigil:changeme@localhost:5432/angelusvigil"
+    database_url: str = "postgresql+asyncpg://vigil:changeme@localhost:5432/sentineldrift"
 
     redis_url: str = "redis://localhost:6379"
 

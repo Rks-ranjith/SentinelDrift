@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 orchestrator.py
 
 End-to-end training pipeline orchestrator for the 3-model
@@ -88,7 +87,7 @@ class TrainingOrchestrator:
     def __init__(
         self,
         output_dir: Path,
-        experiment_name: str = "angelusvigil-training",
+        experiment_name: str = "sentineldrift-training",
         epochs: int = 100,
         batch_size: int = 256,
     ) -> None:

@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // errors.ts
 //
 // Typed API error handling with status code mapping and

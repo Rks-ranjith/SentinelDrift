@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_validation.py
 
 Tests post-training ensemble validation with quality gates

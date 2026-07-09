@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 aggregator.py
 
 Per-IP sliding window feature aggregator backed by Redis

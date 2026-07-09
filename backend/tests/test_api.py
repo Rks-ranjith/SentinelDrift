@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_api.py
 
 Tests the FastAPI REST endpoints for health, threats, stats,

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 websocket.py
 
 Pydantic model for real-time WebSocket threat alert

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 encoder.py
 
 Feature vector encoder transforming a combined feature

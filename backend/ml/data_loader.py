@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 data_loader.py
 
 CSIC 2010 HTTP dataset loader with feature extraction for

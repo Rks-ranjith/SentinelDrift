@@ -1,5 +1,3 @@
-/**
- * ©AngelaMos | 2026
  * vite.config.ts
  *
  * Vite build configuration with dev proxy and manual chunk

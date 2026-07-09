@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 mappings.py
 
 Feature encoding mappings, canonical feature order, and

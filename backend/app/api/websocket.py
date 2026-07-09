@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 websocket.py
 
 WebSocket endpoint streaming real-time threat alerts via

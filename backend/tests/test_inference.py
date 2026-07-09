@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_inference.py
 
 Tests the ONNX InferenceEngine for model loading, batch

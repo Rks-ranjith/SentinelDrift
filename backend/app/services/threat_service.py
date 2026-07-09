@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 threat_service.py
 
 Threat event CRUD service for database persistence and

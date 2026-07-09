@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // useStats.ts
 //
 // TanStack Query hook for dashboard statistics

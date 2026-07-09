@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 deps.py
 
 FastAPI dependency injection providers for API key

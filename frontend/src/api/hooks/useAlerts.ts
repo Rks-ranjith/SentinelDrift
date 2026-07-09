@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // useAlerts.ts
 //
 // WebSocket alert stream hook with Zustand state and

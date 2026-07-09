@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // config.ts
 //
 // Application-wide constants and configuration values

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 threats.py
 
 Pydantic response models for the /threats endpoints

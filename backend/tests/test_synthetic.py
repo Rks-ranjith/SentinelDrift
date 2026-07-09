@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_synthetic.py
 
 Tests synthetic HTTP traffic generators and mixed dataset

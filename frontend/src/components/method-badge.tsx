@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // method-badge.tsx
 //
 // Color-coded HTTP method badge component

@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // index.ts
 //
 // Barrel export for Zod-validated API type definitions

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 metadata.py
 
 Model metadata persistence for tracking trained model

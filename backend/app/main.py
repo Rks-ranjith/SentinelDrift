@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 main.py
 
 ASGI application instance created by the factory

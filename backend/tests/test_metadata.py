@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_metadata.py
 
 Tests SHA-256 model version hashing and async metadata

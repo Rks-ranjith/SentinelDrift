@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 experiment.py
 
 MLflow experiment context manager with automatic system

@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // shell.tsx
 //
 // Root application shell with sidebar navigation, header,
@@ -69,7 +68,7 @@ export function Shell(): React.ReactElement {
       >
         <div className={styles.sidebarHeader}>
           <span className={styles.logo}>
-            {sidebarCollapsed ? 'AV' : 'AngelusVigil'}
+            {sidebarCollapsed ? 'SD' : 'SentinelDrift'}
           </span>
           <button
             type="button"

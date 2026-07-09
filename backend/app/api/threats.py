@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 threats.py
 
 Threat event CRUD endpoints with filtering and

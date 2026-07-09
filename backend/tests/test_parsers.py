@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_parsers.py
 
 Tests nginx combined-format log line parsing via the

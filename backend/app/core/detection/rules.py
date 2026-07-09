@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 rules.py
 
 Cold-start rule-based detection engine inspired by
@@ -74,6 +73,17 @@ class _ThresholdRule(NamedTuple):
     score: float
 
 
+@dataclass(frozen=True, slots=True)
+class RuleExclusion:
+    """
+    Defines a rule bypass/exclusion logic for paths and/or source IPs.
+    """
+
+    rule_name: str  # Rule name to bypass (e.g. "SQL_INJECTION", "RATE_ANOMALY") or "*" for all rules
+    paths: list[str] = field(default_factory=list)  # Substring paths to bypass
+    ips: list[str] = field(default_factory=list)  # Source IPs to bypass
+
+
 _PATTERN_RULES: list[_PatternRule] = [
     _PatternRule("LOG4SHELL", LOG4SHELL, 0.95),
     _PatternRule("COMMAND_INJECTION", COMMAND_INJECTION, 0.90),
@@ -116,6 +126,21 @@ class RuleEngine:
     and behavioral thresholds from windowed features
     """
 
+    def __init__(self, exclusions: list[RuleExclusion] | None = None) -> None:
+        self.exclusions = exclusions or []
+
+    def _is_excluded(self, rule_name: str, ip: str, path: str) -> bool:
+        """
+        Check whether a specific rule should be bypassed for a given IP/path.
+        """
+        for exc in self.exclusions:
+            if exc.rule_name == rule_name or exc.rule_name == "*":
+                ip_match = not exc.ips or (ip in exc.ips)
+                path_match = not exc.paths or any(p in path for p in exc.paths)
+                if ip_match and path_match:
+                    return True
+        return False
+
     def score_request(
         self,
         features: dict[str, int | float | bool | str],
@@ -131,20 +156,24 @@ class RuleEngine:
             uri = f"{entry.path}?{entry.query_string}"
 
         for rule in _PATTERN_RULES:
-            if rule.pattern.search(uri):
-                matched.append((rule.name, rule.score))
+            if not self._is_excluded(rule.name, entry.ip, entry.path):
+                if rule.pattern.search(uri):
+                    matched.append((rule.name, rule.score))
 
-        if DOUBLE_ENCODED.search(uri):
-            matched.append(("DOUBLE_ENCODING", _DOUBLE_ENCODING_SCORE))
+        if not self._is_excluded("DOUBLE_ENCODING", entry.ip, entry.path):
+            if DOUBLE_ENCODED.search(uri):
+                matched.append(("DOUBLE_ENCODING", _DOUBLE_ENCODING_SCORE))
 
-        ua_lower = entry.user_agent.lower()
-        if any(sig in ua_lower for sig in SCANNER_USER_AGENTS):
-            matched.append(("SCANNER_UA", _SCANNER_UA_SCORE))
+        if not self._is_excluded("SCANNER_UA", entry.ip, entry.path):
+            ua_lower = entry.user_agent.lower()
+            if any(sig in ua_lower for sig in SCANNER_USER_AGENTS):
+                matched.append(("SCANNER_UA", _SCANNER_UA_SCORE))
 
         for trule in _THRESHOLD_RULES:
-            value = features.get(trule.feature_key, 0)
-            if isinstance(value, int | float) and value > trule.threshold:
-                matched.append((trule.name, trule.score))
+            if not self._is_excluded(trule.name, entry.ip, entry.path):
+                value = features.get(trule.feature_key, 0)
+                if isinstance(value, int | float) and value > trule.threshold:
+                    matched.append((trule.name, trule.score))
 
         if not matched:
             return RuleResult(threat_score=0.0, severity="LOW")

@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // routers.tsx
 //
 // Browser router with lazy-loaded page routes under the

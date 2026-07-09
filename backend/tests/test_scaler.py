@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_scaler.py
 
 Tests the FeatureScaler IQR-based normalization for

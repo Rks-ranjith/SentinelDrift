@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_ml_integration.py
 
 Tests the ML inference engine wired into the ingestion

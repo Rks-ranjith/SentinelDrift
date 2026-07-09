@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 scaler.py
 
 IQR-based feature scaler with JSON persistence for the

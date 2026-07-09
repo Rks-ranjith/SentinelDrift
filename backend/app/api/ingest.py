@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 ingest.py
 
 Batch log ingestion endpoint for pushing raw log lines

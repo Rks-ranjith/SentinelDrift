@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // index.tsx
 //
 // Barrel export for shared UI components

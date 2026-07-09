@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 ${message}
 
 Revision ID: ${up_revision}

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 dispatcher.py
 
 Alert dispatcher routing scored threat events to storage,

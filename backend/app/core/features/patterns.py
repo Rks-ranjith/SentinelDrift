@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 patterns.py
 
 Compiled regex patterns for web attack detection covering

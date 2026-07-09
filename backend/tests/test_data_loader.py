@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_data_loader.py
 
 Tests CSIC 2010 dataset parsing, CSICRequest-to-

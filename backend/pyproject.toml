@@ -1,10 +1,9 @@
-# ©AngelaMos | 2026
 # pyproject.toml
 #
 # Python project metadata, dependencies, and tool
-# configuration for AngelusVigil
+# configuration for SentinelDrift
 #
-# Declares the angelusvigil package (Python 3.14+) with
+# Declares the sentineldrift package (Python 3.14+) with
 # core dependencies (FastAPI, uvicorn, SQLAlchemy, asyncpg,
 # Redis, Pydantic, watchdog, geoip2, typer), dev extras
 # (pytest, ruff, mypy, pylint, coverage, fakeredis), and ml
@@ -16,7 +15,7 @@
 # Connects to all backend source modules
 
 [project]
-name = "angelusvigil"
+name = "sentineldrift"
 version = "0.1.0"
 description = "AI-powered threat detection engine for web server access logs"
 requires-python = ">=3.14"

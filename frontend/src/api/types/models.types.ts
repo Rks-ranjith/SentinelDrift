@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // models.types.ts
 //
 // Zod schemas and types for ML model status and retraining

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 base.py
 
 Abstract SQLModel base class providing UUID primary key

@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 stats_service.py
 
 Threat statistics aggregation service computing time-

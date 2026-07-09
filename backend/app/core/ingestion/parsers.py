@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 parsers.py
 
 Nginx combined-format log line parser with fast string-

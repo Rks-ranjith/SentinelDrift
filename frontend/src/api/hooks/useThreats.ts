@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // useThreats.ts
 //
 // TanStack Query hooks for threat event listing and detail

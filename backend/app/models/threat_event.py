@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 threat_event.py
 
 SQLModel table for detected threat events with full

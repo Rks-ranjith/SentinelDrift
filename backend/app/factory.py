@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 factory.py
 
 FastAPI application factory with async lifespan managing
@@ -135,7 +134,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     app.state.geoip = geoip
     app.state.pipeline_running = True
 
-    logger.info("AngelusVigil started — pipeline active")
+    logger.info("SentinelDrift started — pipeline active")
 
     yield
 
@@ -147,7 +146,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     await redis_manager.disconnect()
     await engine.dispose()
 
-    logger.info("AngelusVigil shut down cleanly")
+    logger.info("SentinelDrift shut down cleanly")
 
 
 def _load_inference_engine() -> InferenceEngine | None:
@@ -180,7 +179,7 @@ def _load_inference_engine() -> InferenceEngine | None:
 
 def create_app() -> FastAPI:
     """
-    Build and configure the AngelusVigil FastAPI application.
+    Build and configure the SentinelDrift FastAPI application.
     """
     app = FastAPI(
         title=settings.app_name,

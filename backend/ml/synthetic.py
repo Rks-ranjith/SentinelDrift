@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 synthetic.py
 
 Synthetic HTTP traffic generator for ML training and

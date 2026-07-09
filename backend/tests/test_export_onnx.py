@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_export_onnx.py
 
 Tests ONNX export and inference parity for the autoencoder,

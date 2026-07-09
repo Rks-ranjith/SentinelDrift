@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // App.tsx
 //
 // Root React component with providers and routing

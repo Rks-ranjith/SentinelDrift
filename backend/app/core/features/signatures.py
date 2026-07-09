@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 signatures.py
 
 User-agent signature sets for bot and security scanner

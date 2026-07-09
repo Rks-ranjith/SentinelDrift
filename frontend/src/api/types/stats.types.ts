@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // stats.types.ts
 //
 // Zod schemas and types for dashboard statistics

@@ -1,5 +1,4 @@
 // ===========================
-// ©AngelaMos | 2026
 // main.tsx
 //
 // React application entry point

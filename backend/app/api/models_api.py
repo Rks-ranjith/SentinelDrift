@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 models_api.py
 
 ML model status and retraining endpoints

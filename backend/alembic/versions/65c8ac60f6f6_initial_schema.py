@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 initial schema
 
 Revision ID: 65c8ac60f6f6

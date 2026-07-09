@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // api.config.ts
 //
 // Axios HTTP client singleton with error interceptor

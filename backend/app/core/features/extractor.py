@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 extractor.py
 
 Stateless per-request feature extraction producing 23

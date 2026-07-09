@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // index.tsx
 //
 // Dashboard page with stats overview, severity distribution,

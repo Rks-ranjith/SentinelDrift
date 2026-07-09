@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // alert-feed.tsx
 //
 // Live WebSocket alert feed with auto-scroll and color-coded

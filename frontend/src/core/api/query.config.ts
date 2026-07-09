@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // query.config.ts
 //
 // TanStack React Query client configuration with retry

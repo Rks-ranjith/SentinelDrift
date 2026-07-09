@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 download_csic.py
 
 CSIC 2010 dataset downloader with progress display and

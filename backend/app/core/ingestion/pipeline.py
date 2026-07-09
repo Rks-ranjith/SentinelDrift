@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 pipeline.py
 
 Four-stage async pipeline transforming raw nginx log lines

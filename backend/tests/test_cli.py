@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_cli.py
 
 Tests the Typer CLI command help output, argument

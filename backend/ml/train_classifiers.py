@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 train_classifiers.py
 
 Sklearn classifier training for the random forest and

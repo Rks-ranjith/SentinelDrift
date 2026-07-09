@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_training.py
 
 Tests training functions for the autoencoder, random forest,

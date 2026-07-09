@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_integration.py
 
 End-to-end tests covering the full path from log file

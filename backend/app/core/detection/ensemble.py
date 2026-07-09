@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 ensemble.py
 
 Score normalization, fusion, and severity classification

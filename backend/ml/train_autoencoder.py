@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 train_autoencoder.py
 
 PyTorch autoencoder training loop with early stopping and

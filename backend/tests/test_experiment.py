@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_experiment.py
 
 Tests the VigilExperiment MLflow context manager for run

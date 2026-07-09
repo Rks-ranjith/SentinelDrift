@@ -1,8 +1,7 @@
 """
-©AngelaMos | 2026
 __main__.py
 
-Uvicorn entry point for the AngelusVigil API server
+Uvicorn entry point for the SentinelDrift API server
 
 Launches app.main:app via uvicorn using host, port, and
 reload settings from app.config.settings
@@ -19,7 +18,7 @@ from app.config import settings
 
 def main() -> None:
     """
-    Run the AngelusVigil API server
+    Run the SentinelDrift API server
     """
     uvicorn.run(
         "app.main:app",

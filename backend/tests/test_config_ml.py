@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_config_ml.py
 
 Tests ML-related settings defaults for detection mode,

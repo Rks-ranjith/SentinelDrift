@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // threat-detail.tsx
 //
 // Modal dialog for full threat event inspection

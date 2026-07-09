@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 conftest.py
 
 Shared pytest fixtures for in-memory SQLite database and

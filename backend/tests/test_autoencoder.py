@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 test_autoencoder.py
 
 Tests the ThreatAutoencoder PyTorch architecture for shape

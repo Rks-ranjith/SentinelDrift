@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 export_onnx.py
 
 ONNX model export functions for the 3-model ML ensemble

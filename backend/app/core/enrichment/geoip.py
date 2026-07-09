@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 geoip.py
 
 Async GeoIP lookup service backed by MaxMind GeoLite2-City

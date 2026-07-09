@@ -1,5 +1,4 @@
 """
-©AngelaMos | 2026
 __init__.py
 
 Test suite package for the ai-threat-detection backend

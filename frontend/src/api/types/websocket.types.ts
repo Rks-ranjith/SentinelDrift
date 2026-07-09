@@ -1,5 +1,4 @@
 // ===================
-// © AngelaMos | 2026
 // websocket.types.ts
 //
 // Zod schema and type for real-time WebSocket alert frames
