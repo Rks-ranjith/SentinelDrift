@@ -1,7 +1,6 @@
-﻿# SentinelDrift .gitignore — backend only
+# SentinelDrift .gitignore — backend only
 
 # Not tracked yet (rewrite in progress)
-frontend/
 infra/
 learn/
 data/

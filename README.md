@@ -1,4 +1,4 @@
-﻿# SentinelDrift
+# SentinelDrift
 
 An AI-powered HTTP threat detection engine — my own rework built incrementally on top of the original [ai-threat-detection](https://github.com/CarterPerez-dev/Cybersecurity-Projects/tree/main/PROJECTS/advanced/ai-threat-detection) project by CarterPerez-dev.
 
@@ -17,6 +17,9 @@ This repo tracks **only the backend** as I rewrite and extend it piece by piece.
 ---
 
 ## My changes (Changelog)
+
+### Session 2 — 2026-07-10
+- Added a "Generate Bypass Rule" feature to the frontend `ThreatDetail` modal. It generates ready-to-use Python snippets of the `RuleExclusion` dataclass to easily whitelist false-positives by IP and path.
 
 ### Session 1 — 2026-07-09
 - Renamed project from AngelusVigil to **SentinelDrift** across all backend source files
