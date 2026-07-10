@@ -18,10 +18,10 @@ This repo tracks **only the backend** as I rewrite and extend it piece by piece.
 
 ## My changes (Changelog)
 
-### Session 2 — 2026-07-10
+### Session 2
 - Added a "Generate Bypass Rule" feature to the frontend `ThreatDetail` modal. It generates ready-to-use Python snippets of the `RuleExclusion` dataclass to easily whitelist false-positives by IP and path.
 
-### Session 1 — 2026-07-09
+### Session 1
 - Renamed project from AngelusVigil to **SentinelDrift** across all backend source files
 - Removed all inline author annotations from the codebase
 - Implemented RuleExclusion dataclass in rules.py — allows per-IP and per-path WAF bypass rules (false-positive whitelisting)
