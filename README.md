@@ -18,6 +18,12 @@ This repo tracks **only the backend** as I rewrite and extend it piece by piece.
 
 ## My changes (Changelog)
 
+### Session 3
+- Added webhook alerting to `AlertDispatcher` — HIGH severity threats now fire a formatted POST to a configurable Discord/Slack webhook URL
+- Added `webhook_url` config option to `settings` (set via `.env` or environment variable)
+- Webhook is fire-and-forget via `asyncio.create_task` so it never blocks the main detection pipeline
+- Added 3 new unit tests in `test_dispatcher.py` covering webhook trigger, MEDIUM-severity no-op, and unconfigured URL guard
+
 ### Session 2
 - Added a "Generate Bypass Rule" feature to the frontend `ThreatDetail` modal. It generates ready-to-use Python snippets of the `RuleExclusion` dataclass to easily whitelist false-positives by IP and path.
 
