@@ -52,6 +52,7 @@ class Settings(BaseSettings):
     database_url: str = "postgresql+asyncpg://vigil:changeme@localhost:5432/sentineldrift"
 
     redis_url: str = "redis://localhost:6379"
+    webhook_url: str | None = None
 
     geoip_db_path: str = "/usr/share/GeoIP/GeoLite2-City.mmdb"
 
